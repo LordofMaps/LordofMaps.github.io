@@ -98,6 +98,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background-color: #995f5f;
+}
+
+#countdown {
+  color: #333;
+  font-size: 28px;
+}
+
+#countdown-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
