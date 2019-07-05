@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500&display=swap');
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -16,7 +16,7 @@
 html {
   color: #222;
   font-size: 1em;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'EB Garamond', serif;
   line-height: 1.4;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 #countdown {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.75);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -115,7 +115,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 3rem;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
 }
 
 #countdown-container {
