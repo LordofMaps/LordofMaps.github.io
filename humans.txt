@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    William -- Developer -- @willthedev
+    Mae -- Designer
 
 # TECHNOLOGY COLOPHON
 
