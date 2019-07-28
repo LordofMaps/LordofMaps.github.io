@@ -9,15 +9,35 @@
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,500i,600,600&display=swap');
 
+@font-face {
+  font-family:"trajan-pro-3";
+  src:url("https://use.typekit.net/af/bdb813/000000000000000000012e91/27/l?subset_id=2&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/bdb813/000000000000000000012e91/27/d?subset_id=2&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/bdb813/000000000000000000012e91/27/a?subset_id=2&fvd=n3&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;
+}
+@font-face {
+  font-family:"futura-pt";
+  src:url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+  font-family:"poynter-oldstyle-display-nar";
+  src:url("https://use.typekit.net/af/a716d9/00000000000000003b9ae895/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/a716d9/00000000000000003b9ae895/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/a716d9/00000000000000003b9ae895/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;
+  }
+  
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+/* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 html {
-  color: #222;
-  font-size: 1em;
-  font-family: 'EB Garamond', serif;
-  line-height: 1.4;
+  color: #414042;
+  font-size: calc(8px + (20 - 8) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1em + (1.5 - 1) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "trajan-pro-3", serif;
+  /* line-height: 1.4; */
 }
 
 /*
@@ -68,6 +88,10 @@ video {
   vertical-align: middle;
 }
 
+svg {
+  fill: currentColor;
+}
+
 /*
  * Remove default fieldset styles.
  */
@@ -102,32 +126,220 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color: #995f5f;
+  background-color: #FFFFFF;
 }
 
-#countdown {
-  color: rgba(255, 255, 255, 0.75);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+#content {
+  padding: 0 5vw 0 5vw;
 }
-.countdown {
+
+#navigation {
+  margin: 4rem 0 -9px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-family: "futura-pt";
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  border-bottom: 2px solid #414042;
+  /* border-width: 0 0 2px 0; */
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 4px 2px 4px;
+  color: #414042;
+  font-size: 0.8rem;
+  min-width: 4rem;
+  height: 1rem;
+}
+
+#logo {
+  width: 200px;
   padding: 0;
   margin: 0;
-  font-size: 3rem;
-  line-height: 2.5rem;
-  letter-spacing: -1px;
+  margin-left: 30px;
 }
 
-#countdown-container {
-  height: 100vh;
+#intro {
+  background-color: #eeebde;
+  margin: 0;
+  padding: 6vw 3vw 4vw 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+#intro-left {
+  width: 50%;
+}
+
+#intro-right {
+  width: 50%;
+  text-align: center;
+}
+
+#intro-img {
+  width: 100%;
+  margin-bottom: -30%;
+}
+
+#intro-text {
+  color: #8d6f6c;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+  margin-left: -120px;
+}
+
+#intro-chevron {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  transform: rotate(45deg);
+  border: 3px solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  align-self: flex-end;
+}
+
+#rsvp {
+  position: relative;
+  background-color: transparent;
+  margin: 12vw 6vw 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 45vw;
+}
+
+#rsvp-color-block {
+  position: absolute;
+  background-color: #a0686b;
+  width: 95%;
+  height: 90%;
+  top: 0;
+  left: 0;
+}
+
+#rsvp-img {
+  position: absolute;
+  height: 60%;
+  bottom: 0;
+  right: 0;
+}
+
+#rsvp-text {
+  position: absolute;
+  width: 25vw;
+  padding-bottom: 10vw;
+}
+
+#rsvp-text:after {
+  height: 4px;
+  display: block;
+  width: 5rem;
+  background: #FFFFFF;
+  content: '';
+  margin-top: 10px;
+}
+
+#registry {
+  position: relative;
+  background-color: transparent;
+  margin: 12vw 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45vw;
+}
+
+#registry-color-block {
+  position: absolute;
+  background-color: #d8bfb6;
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  z-index: -1;
+}
+
+#registry-img {
+  /* position: absolute; */
+  height: 75%;
+  /* left: 0; */
+}
+
+#registry-text {
+  padding: 0 0 5vw 0;
+  margin: 0 0 0 -3vw;
+  width: 500px;
+}
+
+#registry-text:after {
+  height: 4px;
+  display: block;
+  width: 5rem;
+  background: #FFFFFF;
+  content: '';
+  margin-top: 10px;
+}
+
+#footer {
+  background-color: #414042;
+  margin: 10vh 0 0 0;
+}
+
+#footer-top {
+  padding: 5vw 10vh;
+}
+
+#footer-bottom {
+  height: 70px;
+  background-color: #FFFFFF;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+#footer-text {
+  font-family: "EB Garamond";
+  margin: 0 0 3vw 5vw;
+  font-weight: 400;
+  /* line-height: 2.2rem; */
+}
+
+#footer-quote {
+  font-family: "EB Garamond";
+  font-style: italic;
+  display: block;
+  color: #d8bfb6;
+  font-size: 2rem;
+  line-height: 2rem;
+  border-left: 2px solid #d8bfb6;
+  padding: 0 0 2rem 0.6rem;
+  margin: 0 auto;
+  width: 30vw;
+}
+
+#footer-credit-text {
+  font-family: "futura-pt";
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-left: 3vw;
+}
+
+.info-text {
+  color: #FFFFFF;
+  font-family: "poynter-oldstyle-display";
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* ==========================================================================
-   Helper classes
+   Helper classes #d8bfb6 , #8d6f6c
    ========================================================================== */
 
 /*
