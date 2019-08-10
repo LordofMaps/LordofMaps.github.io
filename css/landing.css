@@ -418,6 +418,10 @@ h1 {
   font-weight: 600;
 }
 
+.info-text > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 .info-text:after {
   height: 4px;
@@ -454,9 +458,15 @@ h1 {
 }
 
 .detail-block>p {
-  margin: 0 auto;
-  padding-left: 2.5rem;
   z-index: 2;
+  color: #FFFFFF;
+  font-family: "poynter-oldstyle-display", serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding: 0;
+  padding-left: 2.5rem;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
 /* ==========================================================================
