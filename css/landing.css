@@ -29,6 +29,9 @@
 @font-face {
   font-family: "poynter-oldstyle-display";
   src: url("https://use.typekit.net/af/9db33c/00000000000000003b9ae88c/27/l?subset_id=2&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/9db33c/00000000000000003b9ae88c/27/d?subset_id=2&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/9db33c/00000000000000003b9ae88c/27/a?subset_id=2&fvd=n6&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 100;
 }
 
 
@@ -44,7 +47,6 @@ html {
   font-size: calc(8px + (20 - 8) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1em + (1.5 - 1) * ((100vw - 300px) / (1600 - 300)));
   font-family: "trajan-pro-3", serif;
-  /* line-height: 1.4; */
 }
 
 /*
@@ -159,7 +161,6 @@ h1 {
   letter-spacing: 0.2rem;
   display: inline-block;
   border-bottom: 2px solid #414042;
-  /* border-width: 0 0 2px 0; */
   text-align: center;
   text-decoration: none;
   padding: 4px 4px 2px 4px;
@@ -175,7 +176,6 @@ h1 {
   width: 15vw;
   padding: 0;
   margin: 0;
-  /* margin-left: 30px; */
 }
 
 #intro {
@@ -437,11 +437,12 @@ h1 {
 }
 
 .detail-block>h4 {
-  width: 5rem;
+  width: 6rem;
   text-align: center;
   font-family: "futura-pt";
   font-size: 1rem;
   line-height: 1.2rem;
+  letter-spacing: 0.1rem;
   font-weight: 200;
   color: #FFFFFF;
   padding: 1rem 0;
@@ -451,7 +452,7 @@ h1 {
 .detail-block>h4:after {
   height: 2px;
   display: block;
-  width: 5rem;
+  width: 6rem;
   background: #FFFFFF;
   content: '';
   margin: 2px 0 0 0;
