@@ -164,7 +164,7 @@ h1 {
 }
 
 .nav-link {
-  font-family: "futura-pt";
+  font-family: "futura-pt", Helvetica;
   letter-spacing: 0.2rem;
   display: inline-block;
   border-bottom: 2px solid #414042;
@@ -409,10 +409,17 @@ h1 {
 }
 
 #footer-credit-text {
-  font-family: "futura-pt";
+  font-family: "futura-pt", Helvetica;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   margin-left: 3vw;
+}
+
+#RSVPifyIFrame {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+  height: 1860px;
 }
 
 .info-text {
@@ -425,7 +432,7 @@ h1 {
   font-weight: 600;
 }
 
-.info-text > a {
+.info-text>a {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -446,7 +453,7 @@ h1 {
 .detail-block>h4 {
   width: 6rem;
   text-align: center;
-  font-family: "futura-pt";
+  font-family: "futura-pt", Helvetica;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0.1rem;
