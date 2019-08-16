@@ -126,6 +126,22 @@ body {
   justify-content: center;
 }
 
+#close-button {
+  background: transparent;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 15px;
+  right: 15px;
+}
+
+.close-icon {
+  color: #995f5f;
+  stroke: none;
+  fill: rgba(255, 255, 255, 0.5);
+  stroke-width: 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
