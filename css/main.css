@@ -129,6 +129,8 @@ body {
 #close-button {
   background: transparent;
   position: absolute;
+  border: none;
+  cursor: pointer;
   width: 45px;
   height: 45px;
   top: 15px;
