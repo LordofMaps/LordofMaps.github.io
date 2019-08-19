@@ -435,7 +435,9 @@ h1 {
   font-weight: 600;
 }
 
-.info-text>a {
+.info-text>a,
+.info-text>a:visited,
+.info-text>a:active {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -485,6 +487,13 @@ h1 {
   padding-left: 2.5rem;
   margin: 0 auto;
   font-weight: 600;
+}
+
+.detail-block a,
+.detail-block a:active
+.detail-block a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
