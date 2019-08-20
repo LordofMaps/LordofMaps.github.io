@@ -418,6 +418,50 @@ h1 {
   margin-left: 3vw;
 }
 
+#details-intro {
+  background-color: #eeebde;
+  margin: 0;
+  padding: 6vw 3vw 4vw 3vw;
+  display: flex;
+  justify-content: left;
+  margin: 0 0 10vw 0;
+}
+
+#details-intro-left {
+  width: 50%;
+}
+
+#details-intro p {
+  /* color: #FFFFFF; */
+  font-family: "EB Garamond", "Garamond";
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+#details-intro a:active,
+#details-intro a:visited,
+#details-intro a {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "EB Garamond", "Garamond";
+  text-decoration: none;
+  font-style: italic
+}
+
+#details-intro-right {
+  width: 50%;
+}
+
+#details-intro-img {
+  width: 100%;
+  margin-bottom: -10vw;
+}
+
+#details-intro-text {
+  color: #8d6f6c;
+  margin-top: 3rem;
+  margin-left: -120px;
+}
+
 #RSVPifyIFrame {
   width: 100%;
   border: none;
